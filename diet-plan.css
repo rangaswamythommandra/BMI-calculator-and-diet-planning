@@ -1,0 +1,62 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #6499E9;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the title */
+h1 {
+    background-color: #9EDDFF;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the meal plan boxes */
+.meal-plan {
+    background-color: #A6F6FF;
+    color: #000;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for meal plan boxes */
+.meal-plan:hover {
+    transform: scale(1.02);
+}
+
+/* Style the headings in meal plans */
+.meal-plan h2 {
+    background-color: #BEFFF7;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style the meal plan items */
+.meal-plan ul {
+    list-style: none;
+}
+
+.meal-plan ul li {
+    margin-bottom: 8px;
+}
+
+/* Style the meal plan descriptions */
+.meal-plan p {
+    margin-top: 10px;
+}
+
+
+

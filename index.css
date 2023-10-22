@@ -1,0 +1,156 @@
+/**
+ * Reset some default styles for consistency
+ *
+ * @format
+ */
+
+body,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Define colors */
+:root {
+	--primary-bg-color: #3498db; /* Blue */
+	--secondary-bg-color: #ffffff; /* White */
+	--light-bg-color: #ecf0f1; /* Light Gray */
+	--extra-light-bg-color: #f7f7f7; /* Extra Light Gray */
+}
+
+/* Style the body */
+body {
+	background-color: var(--extra-light-bg-color);
+	background-image: url(img.jpg);
+	font-family: "Arial", sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* Navigation styles */
+.navbar {
+	background-color: var(--primary-bg-color);
+	color: white;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+	z-index: 2; /* Ensure the navigation bar is on top */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Arial", sans-serif; /* Change the font */
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 1px solid var(--light-bg-color);
+
+	width: 100%;
+	height: 50px;
+}
+
+.navbar li:hover {
+	background-color: var(--primary-bg-color);
+	color: var(--light-bg-color);
+	border-bottom: 1px solid var(--light-bg-color);
+
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	cursor: pointer;
+}
+
+.logo {
+	margin-left: 20px;
+}
+
+.logo img {
+	width: 50px; /* Adjust the size as needed */
+}
+
+.main-menu {
+	list-style: none;
+	display: flex;
+	margin-right: 20px;
+	font-weight: bold; /* Make menu items bold */
+}
+
+.main-menu li {
+	margin: 0 10px;
+}
+
+.main-menu a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Hero section styles */
+/* Hero section styles */
+.hero {
+   
+    background-size: cover;
+    background-position: center;
+    background-color: var(--light-bg-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+
+/* Grid container styles */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	justify-content: center;
+}
+
+/* Grid item styles */
+.grid-item {
+	background-color: var(--secondary-bg-color);
+	padding: 20px;
+	text-align: center;
+	border: 2px solid var(--primary-bg-color);
+	border-radius: 10px;
+	transition: transform 0.2s ease;
+}
+
+.grid-item:hover {
+	transform: scale(1.05);
+}
+
+.grid-item a {
+	text-decoration: none;
+	color: var(--primary-bg-color);
+}
+
+/* Footer styles */
+.footer {
+	background-color: var(--primary-bg-color);
+	color: white;
+	padding: 20px;
+	text-align: center;
+	margin-top: auto;
+}
+
+/* Social media links */
+.social-media a {
+	color: white;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+/* Add animations */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Apply animations */
+.grid-item,
+.footer {
+	animation: fadeIn 1s;
+}
